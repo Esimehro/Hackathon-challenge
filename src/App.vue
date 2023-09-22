@@ -2,21 +2,21 @@
   <div id="App">
     <!-- <Introduction /> -->
     <!-- <Timeline /> -->
-    <!-- <Guidelines /> -->
-    <Cart />
+    <!-- <Partner /> -->
+    <FAQs />
   </div>
 </template>
 <script>
-// import Guidelines from './views/Guidelines.vue'
-import Cart from "./views/Cart.vue"
+import FAQs from './views/FAQs.vue'
 // import Introduction from './views/Introduction.vue'
 // import  Timeline from "./views/Timeline.vue"
+// import Partner from "./views/Partner.vue"
 export default {
   components: {
     // Timeline,
     // Introduction,
-    // Guidelines,
-    Cart
+    FAQs,
+    // Partner,
   }
 }
 </script>
