@@ -3,11 +3,11 @@
     <!-- <Introduction /> -->
     <!-- <Timeline /> -->
     <!-- <Partner /> -->
-    <FAQs />
+    <GetLinked />
   </div>
 </template>
 <script>
-import FAQs from './views/FAQs.vue'
+import GetLinked from './views/GetLinked.vue'
 // import Introduction from './views/Introduction.vue'
 // import  Timeline from "./views/Timeline.vue"
 // import Partner from "./views/Partner.vue"
@@ -15,7 +15,7 @@ export default {
   components: {
     // Timeline,
     // Introduction,
-    FAQs,
+    GetLinked,
     // Partner,
   }
 }
