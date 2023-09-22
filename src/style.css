@@ -1,14 +1,23 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap');
 
 *,
 *::before,
 *::after{
+=======
+*,
+*::after,
+*::before {
+>>>>>>> 7122e17502b846fdda37d819122d88517cac9618
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 a{
   text-decoration: none;
   color: inherit;
 }
+=======
+>>>>>>> 7122e17502b846fdda37d819122d88517cac9618

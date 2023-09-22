@@ -1,32 +1,27 @@
+<template>
+  <div id="App">
+    <!-- <Introduction /> -->
+    <!-- <Timeline /> -->
+    <!-- <Partner /> -->
+    <FAQs />
+  </div>
+</template>
 <script>
-import Awards from './components/Awards.vue';
-
-// import Privacy from './components/Privacy.vue';
-// import Navbar from './components/Navbar.vue';
-// import Banner from './components/Banner.vue';
-// import ContactPage from './components/ContactPage.vue';
-// import PopUp from './components/PopUp.vue';
-// import RegisterPage from './components/RegisterPage.vue';
- export default {
-    name: 'App',
-    components: {
-    Awards
-}
+import FAQs from './views/FAQs.vue'
+// import Introduction from './views/Introduction.vue'
+// import  Timeline from "./views/Timeline.vue"
+// import Partner from "./views/Partner.vue"
+export default {
+  components: {
+    // Timeline,
+    // Introduction,
+    FAQs,
+    // Partner,
+  }
 }
 </script>
-
-<template>
- <div id="App">
-<!-- <Navbar/>
-<Banner/> -->
-<!-- <RegisterPage/> -->
-<!-- <ContactPage/> -->
-<!-- <PopUp/> -->
-<!-- <Privacy/> -->
-<Awards/>
- </div>
-</template>
-
 <style scoped>
-
+  #App{
+    max-width: 1440px;
+  }
 </style>
