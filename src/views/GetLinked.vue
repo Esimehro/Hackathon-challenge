@@ -41,7 +41,7 @@ height: 22px;" class="star3">
 export default {
     data() {
                 return {
-                    targetTime: new Date().getTime() + (54 * 60 * 60 * 1000), // 54 hours in milliseconds
+                    targetTime: new Date().getTime() + (54 * 60 * 60 * 1000),
                     currentTime: new Date().getTime()
                 };
             },
@@ -79,17 +79,16 @@ export default {
         background: #150E28;
         max-width: 1440px;
         width: 100%;
-        padding: 10px 40px 10px 100px;
+        padding: 30px 40px 10px 100px;
         border-bottom: 1px solid grey;
     }
     .revolution{
-        /* background: green; */
         display: flex;
         flex-direction: column;
         justify-content: right;
         position: relative;
         align-items: flex-end;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
     .revolution p{
         color: #ffffff;
@@ -114,18 +113,12 @@ export default {
 
     }
     .block-block{
-        /* background: red; */
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         justify-content: center;
     }
-.title-block{
-    /* background: green; */
-}
 .tittle-img{
     width:110%;
-    /* position: absolute; */
     left: 96px;
     top: 110px;
     z-index: 999;
@@ -136,8 +129,6 @@ export default {
   font-size: 19px;
   font-weight: 400;
   width: 110%;
-  /* margin-top: 3rem; */
-  /* background: green; */
   left: 0;
   letter-spacing: 0;
   line-height: 33.2px;
@@ -179,18 +170,15 @@ export default {
 }
 .timer p{
     letter-spacing: 3px;
-
 }
 .timer span{
     font-size: 12px;
-    /* background: green; */
     display: flex;
     height: 100%;
     margin-top: -13px;
     align-items: flex-end;
 }
     .image-block{
-        /* background: green; */
         position: relative;
         margin-top: 1.5rem;
     }
@@ -207,35 +195,317 @@ export default {
     }
     .star1{
         position: absolute;
-        top: 30px;
+        top: 190px;
+        left: 160px;
     }
     .star2{
         position: absolute;
         top: 480px;
         left: 500px;
-
     }
     .star3{
         position: absolute;
-        top: 80px;
+        top: 230px;
         left: 710px;
-
     }
     .light{
         position: absolute;
         width: 430px;
-        opacity: .5;
-        top: -45px;
+        opacity: .3;
+        top: 105px;
     }
     .metrix{
         width: 150%;
         position: absolute;
         left: -250px;
         opacity: .8;
-        /* top: 20px; */
         bottom: 0;
         background-size: cover;
         background-position: center;
-        /* background: #ffffff; */
     }
+    @media screen and (max-width: 1286px) {
+        .revolution p{
+  font-size: 34px;
+  letter-spacing: .5px;
+    }
+    }
+    @media screen and (max-width: 1147px) {
+        .revolution p{
+  font-size: 32px;
+  letter-spacing: 0px;
+    }
+    }
+    @media screen and (max-width: 1176px) {
+        .container{
+        max-width: 1176px;
+        padding: 30px 40px 10px 84px;
+        border-bottom: 1px solid grey;
+    }
+        .revolution p{
+  font-size: 30px;
+  letter-spacing: 0px;
+    }
+    }
+    @media screen and (max-width: 1107px) {
+        .container{
+        max-width: 1107px;
+    }
+    .title-block p{
+  font-size: 18px;
+  width: 110%;
+  line-height: 33.2px;
+}
+    }
+    @media screen and (max-width: 1086px) {
+        .container{
+        max-width: 1086px;
+    }
+    .title-block p{
+  font-size: 17px;
+  width: 110%;
+  line-height: 33.2px;
+}
+        .revolution p{
+  font-size: 28px;
+    }
+    }
+@media screen and (max-width: 1000px) {
+    .container{
+        max-width: 1000px;
+        padding: 30px 40px 10px 52px;
+    }
+}
+@media screen and (max-width: 975px) {
+    .container{
+        max-width: 975px;
+        padding: 30px 40px 10px 52px;
+    }
+    .blocks{
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
+    .title-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.block-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title-block p{
+  font-size: 22px;
+  width: 100%;
+  text-align: center;
+  line-height: 33.2px;
+}
+.tittle-img{
+    width:100%;
+    left: 96px;
+    top: 110px;
+    z-index: 999;
+}
+.button-block{
+    margin-top: 27px;
+}
+.button-block button{
+  margin-bottom: 26px;
+
+}
+.metrix{
+        width: 100%;
+        position: absolute;
+        left: -50px;
+        opacity: .8;
+        bottom: 0;
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 744px) {
+    .star3{
+        position: absolute;
+        top: 230px;
+        left: 400px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .revolution{
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .revo-image{
+        width: 140px;
+        bottom: 0;
+        top: 40px;
+        left: 330px;
+    }
+    .revolution p{
+  font-size: 24px;
+  width: 100%;
+    }
+    .title-block p{
+  font-size: 17px;
+}
+    .man1{
+        width:100%;
+        margin-left: -3rem;
+    }
+    .man2{
+        width: 100%;
+        left: -45px;
+        opacity: .8;
+        top: 0px;
+    }
+}
+@media screen and (max-width: 565px) {
+    .revo-image{
+        width: 140px;
+        bottom: 0;
+        top: 40px;
+        left: 300px;
+    }
+}
+@media screen and (max-width: 550px) {
+ 
+    .star2{
+        top: 480px;
+        left: 400px;
+    }
+    .light{
+        position: absolute;
+        width: 330px;
+        opacity: .3;
+        top: 105px;
+    }
+}
+@media screen and (max-width: 529px) {
+    .revolution p{
+  font-size: 20px;
+  width: 100%;
+    }
+    .revo-image{
+        width: 120px;
+        bottom: 0;
+        top: 30px;
+        left: 300px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .revolution p{
+  font-size: 18px;
+  width: 100%;
+    }
+    .revo-image{
+        width: 100px;
+        bottom: 0;
+        top: 30px;
+        left: 280px;
+    }
+}
+@media screen and (max-width: 485px) {
+    .title-block p{
+  font-size: 15px;
+}
+    .revo-image{
+        width: 100px;
+        bottom: 0;
+        top: 30px;
+        left: 250px;
+    }
+}
+@media screen and (max-width: 465px) {
+    .revo-image{
+        width: 100px;
+        bottom: 0;
+        top: 30px;
+        left: 220px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .revolution p{
+  font-size: 16px;
+  width: 100%;
+    } 
+    .title-block p{
+  font-size: 14px;
+}
+    .star2{
+        top: 480px;
+        left: 350px;
+    }
+    .star3{
+        top: 230px;
+        left: 300px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .title-block p{
+  font-size: 12px;
+  line-height: 18px;
+}
+.revo-image{
+        top: 24px;
+        left: 200px;
+    }
+    .light{
+        width: 250px;
+        opacity: .3;
+        top: 105px;
+    }
+    .timer-block{
+  font-size: 54px;
+}
+}
+@media screen and (max-width: 385px) {
+    .star2{
+        position: absolute;
+        top: 430px;
+        left: 200px;
+    }
+    .star3{
+        top: 230px;
+        left: 250px;
+    }
+    .title-block p{
+  font-size: 10px;
+  line-height: 18px;
+}
+.revolution{
+    width: 110%;
+    text-align: center;
+}
+.revolution p{
+  font-size: 14px;
+  width: 100%;
+    } 
+    .revo-image{
+        top: 22px;
+        left: 150px;
+    }
+}
+@media screen and (max-width: 325px) {
+    .revolution p{
+  font-size: 12px;
+  width: 100%;
+    } 
+    .revo-image{
+        top: 22px;
+        left: 150px;
+        width: 70px;
+    }
+    .light{
+        width: 200px;
+        top: 105px;
+    }
+    .timer-block{
+  font-size: 34px;
+}
+}
 </style>

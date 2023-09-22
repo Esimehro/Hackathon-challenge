@@ -1,22 +1,14 @@
 <template>
   <div id="App">
-    <!-- <Introduction /> -->
-    <!-- <Timeline /> -->
-    <!-- <Partner /> -->
-    <GetLinked />
+   <router-view />
   </div>
 </template>
 <script>
-import GetLinked from './views/GetLinked.vue'
-// import Introduction from './views/Introduction.vue'
-// import  Timeline from "./views/Timeline.vue"
-// import Partner from "./views/Partner.vue"
+
 export default {
+  name: "App",
   components: {
-    // Timeline,
-    // Introduction,
-    GetLinked,
-    // Partner,
+ 
   }
 }
 </script>
