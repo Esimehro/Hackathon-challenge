@@ -296,6 +296,7 @@ export default {
   padding: 3rem;
   border-radius: 12px;
   width: 42%;
+  height: 650px;
   /* height: 80%; */
 }
 .text-wrapper-1 {
@@ -304,6 +305,7 @@ export default {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  margin-top: 0rem;
 }
 .movement {
   display: flex;

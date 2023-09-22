@@ -1,14 +1,17 @@
 <script>
+import Awards from './components/Awards.vue';
+
+// import Privacy from './components/Privacy.vue';
 // import Navbar from './components/Navbar.vue';
 // import Banner from './components/Banner.vue';
-import RegisterPage from './components/RegisterPage.vue';
+// import ContactPage from './components/ContactPage.vue';
+// import PopUp from './components/PopUp.vue';
+// import RegisterPage from './components/RegisterPage.vue';
  export default {
     name: 'App',
-    components: { 
-        // Navbar, 
-        // Banner,
-        RegisterPage,
-    }
+    components: {
+    Awards
+}
 }
 </script>
 
@@ -16,7 +19,11 @@ import RegisterPage from './components/RegisterPage.vue';
  <div id="App">
 <!-- <Navbar/>
 <Banner/> -->
-<RegisterPage/>
+<!-- <RegisterPage/> -->
+<!-- <ContactPage/> -->
+<!-- <PopUp/> -->
+<!-- <Privacy/> -->
+<Awards/>
  </div>
 </template>
 
