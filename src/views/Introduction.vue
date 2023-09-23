@@ -4,7 +4,7 @@
       <div class="big-idea-wrapper">
         <div class="bulb-container">
           <div class="big-bulb">
-            <img src="../assets/the big idea 1.png" alt="" />
+            <img src="../assets/the-big-idea-1.png" alt="" />
           </div>
           <div class="big-idea-2">
             The Big

@@ -5,7 +5,7 @@ height: 22px;" class="star1">
 <img src="../assets/Purple4.png" alt="" class="light">
         <div class="revolution">
             <p>Igniting a Revolution in HR Innovation</p>
-            <img src="../assets/Vector 4.png" alt="" class="revo-image">
+            <img src="../assets/Vector-4.png" alt="" class="revo-image">
         </div>
         <div class="blocks">
         <div class="block-block">
@@ -25,14 +25,14 @@ a chance to win a Big prize</p></div>
                     <p>{{ seconds }}</p> <span>S</span>
                 </div>
             </div>
-            <img src="../assets/star (1).png" alt="" style="width: 16px;
+            <img src="../assets/star-(1).png" alt="" style="width: 16px;
 height: 22px;" class="star2">
- <img src="../assets/star (1).png" alt="" style="width: 16px;
+ <img src="../assets/star-(1).png" alt="" style="width: 16px;
 height: 22px;" class="star3">
         </div>
         <div class="image-block">
             <img src="../assets/man.png" alt="" class="man1">
-            <img src="../assets/Image 1.png" alt="" class="man2">
+            <img src="../assets/Image-1.png" alt="" class="man2">
             <img src="../assets/metrix.png" alt="" class="metrix">
         </div>
     </div></div>

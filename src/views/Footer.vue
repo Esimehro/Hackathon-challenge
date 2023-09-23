@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="label1">
-        <img src="../assets/star (1).png" alt="" class="dark-star" />
+        <img src="../assets/star-(1).png" alt="" class="dark-star" />
         <div>
           <p class="text-wrapper1">Useful Links</p>
         </div>
@@ -68,7 +68,7 @@
           </div>
           <div class="contact">
             <img
-              src="../assets/Vector (2).png"
+              src="../assets/Vector-(2).png"
               alt=""
               style="width: 13px; height: 15px"
             />

@@ -3,7 +3,7 @@
     <div class="mobile-container">
       <div v-show="!mobileMenuOpen" class="header">
         <img
-          src="../assets/Vector (3).png"
+          src="../assets/Vector-(3).png"
           alt=""
           class="open"
           @click="openMobileMenu"
@@ -16,7 +16,7 @@
       <div class="mobile" v-show="mobileMenuOpen">
         <div class="close-block">
           <img
-            src="../assets/Vector (4).png"
+            src="../assets/Vector-(4).png"
             alt=""
             class="close"
             @click="closeMobileMenu"

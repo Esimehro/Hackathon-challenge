@@ -13,9 +13,9 @@
     </div>
     <div class="block2">
       <div class="block-img" style="gap: 48px;">
-        <img src="../assets/Line 12.png" alt="" class="line-1">
-        <img src="../assets/Line 17.png" alt="" class="line-1-1">
-        <img src="../assets/Line 17.png" alt="" class="line-1-2">
+        <img src="../assets/Line-12.png" alt="" class="line-1">
+        <img src="../assets/Line-17.png" alt="" class="line-1-1">
+        <img src="../assets/Line-17.png" alt="" class="line-1-2">
         <img
           src="../assets/Liberty.png"
           alt=""
@@ -31,9 +31,9 @@
         <img src="../assets/satagra.png" alt="" class="purple-star2" style="width: 15px;">
     <img src="../assets/star.png" alt="" class="purple-star3" style="width: 15px;">
 
-        <img src="../assets/Line 12.png" alt="" class="line-2">
-        <img src="../assets/Line 17.png" alt="" class="line-2-1">
-        <img src="../assets/Line 17.png" alt="" class="line-2-2">
+        <img src="../assets/Line-12.png" alt="" class="line-2">
+        <img src="../assets/Line-17.png" alt="" class="line-2-1">
+        <img src="../assets/Line-17.png" alt="" class="line-2-2">
         
         <img
           src="../assets/Liberty-pay.png"
@@ -47,7 +47,7 @@
         />
       </div>
       <div class="block-img" style="gap: 99px; margin-left: -20px;">
-        <img src="../assets/Line 12.png" alt="" class="line-3">
+        <img src="../assets/Line-12.png" alt="" class="line-3">
         <img
           src="../assets/Winwise.png"
           alt=""
