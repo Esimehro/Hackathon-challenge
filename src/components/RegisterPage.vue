@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Navbar />
   <div class="register-page">
     <div class="vector-container">
@@ -274,6 +274,9 @@ components:{
 </script>
 
 <style scoped>
+.container {
+  max-width: 1440px;
+}
 .register-page {
   background-color: #150e28;
   display: flex;
