@@ -25,13 +25,28 @@
         <h4>Let us know about it</h4>
       </div>
 
-      <form action="" class="contact-form">
+      <form action="" @submit.prevent="proceed" class="contact-form" novalidate>
         <div class="text-box">
-          <input type="text" placeholder="Firstname" />
+          <input type="text" placeholder="Firstname" v-model="contactData.firstName"/>
+
+          <div
+  v-if="submitted && (!contactData.firstName || contactData.firstName.length < 3)"
+  class="error-message"
+>
+              Team's name must be at least 3 characters.
+            </div>
         </div>
 
         <div class="text-box">
-          <input type="email" placeholder="Mail" />
+          <input type="email" placeholder="Mail" 
+          v-model="contactData.email"/>
+
+          <div
+              v-if="submitted && !isValidEmail(contactData.email)"
+              class="error-message"
+            >
+              Invalid email address.
+            </div>
         </div>
 
         <div class="text-box">
@@ -41,7 +56,15 @@
             cols="44"
             rows="7"
             placeholder="Message"
+            v-model="contactData.message"
           ></textarea>
+
+          <div
+  v-if="submitted && (!contactData.message || contactData.message.length < 3)"
+  class="error-message"
+>
+              Message must be at least 3 characters.
+            </div>
         </div>
 
         <div class="submit-btn">
@@ -52,8 +75,70 @@
   </div>
 </template>
 <script>
+import { ref } from "vue";
+import axios from "axios";
 export default {
   name: "ContactPage",
+
+  setup() {
+    const contactData = ref({
+      firstName: "",
+      email: "",
+      message: "",
+    });
+
+    const submitted = ref(false);
+
+    const isValidEmail = (email) => {
+      const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+      return emailRegex.test(email);
+    };
+
+
+    const proceed = async () => {
+      const isValidName = contactData.value.firstName.length >= 3;
+      const isValidMessage = contactData.value.message.length >= 3;
+      const isValidEmailValue = isValidEmail(contactData.value.email);
+      
+
+      if (
+        !isValidName ||
+        !isValidEmailValue ||
+        !isValidMessage 
+      ) {
+        submitted.value = true;
+      } else {
+        try {
+          const response = await axios.post("https://backend.getlinked.ai/hackathon/contact-form'",
+            {
+              firstName: contactData.value.firstName,
+              email: contactData.value.email,
+              message: contactData.value.message,
+            }
+          );
+
+          contactData.value.firstName = "";
+          contactData.value.email = "";
+          contactData.value.message = "";
+
+          submitted.value = false;
+        } catch (error) {
+          console.log("API request error:", error);
+          if (error.response) {
+            console.log("Response data:", error.response.data);
+          }
+        }
+      }
+    };
+
+    return {
+      contactData,
+      submitted,
+      proceed,
+      isValidEmail,
+      
+    };
+  },
 };
 </script>
 
@@ -146,6 +231,9 @@ color: #D434FE;
   flex-direction: column;
   gap: 1.5rem;
 }
+.text-box{
+  position: relative;
+}
 .text-box input{
     height: 40px;
   width: 350px;
@@ -198,5 +286,12 @@ color: #D434FE;
   color: #fff;
   font-weight: 400;
   font-size: 12px;
+}
+.error-message {
+  position: absolute;
+  color: #ffff;
+  /* left: -1px;
+  top: 4rem; */
+  font-size: 13px;
 }
 </style>

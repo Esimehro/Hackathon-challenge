@@ -3,10 +3,12 @@
     <!-- <Introduction /> -->
     <!-- <Timeline /> -->
     <!-- <Partner /> -->
+    <!-- <ContactPage/> -->
     <FAQs />
   </div>
 </template>
 <script>
+import ContactPage from './components/ContactPage.vue';
 import FAQs from './views/FAQs.vue'
 // import Introduction from './views/Introduction.vue'
 // import  Timeline from "./views/Timeline.vue"
@@ -16,8 +18,8 @@ export default {
     // Timeline,
     // Introduction,
     FAQs,
-    // Partner,
-  }
+    // ContactPage,
+}
 }
 </script>
 <style scoped>
