@@ -25,8 +25,8 @@
         <div>
           <ul class="links">
             <li><a href="#section-6" class="active-link">Timeline</a></li>
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><a href="#section-2">Overview</a></li>
+            <li><a href="#section-5">FAQs</a></li>
             <li><router-link to="/contact" class="active-link">Contact</router-link></li>
           </ul>
           <div class="register-btn2">
@@ -44,9 +44,9 @@
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="#section-6" class="active-link">Timeline</a></li>
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">FAQs</a></li>
-          <li><router-link to="/contact" class="active-link">Contact</router-link></li>
+            <li><a href="#section-2">Overview</a></li>
+            <li><a href="#section-5">FAQs</a></li>
+            <li><router-link to="/contact" class="active-link">Contact</router-link></li>
         </ul>
 
         <div class="register-btn" >

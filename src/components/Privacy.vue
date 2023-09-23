@@ -39,7 +39,8 @@
     </div>
 
     <div class="side-2">
-        <img src="../assets/privacy.png" alt="privacy image">
+      <img src="../assets/privacy-logo.png" alt="" class="privacy-logo">
+        <img src="../assets/privacy.png" alt="privacy image" class="privacy">
     </div>
   </div>
 </template>
@@ -51,10 +52,11 @@ export default {};
     background-color: #150e28;
     display: flex;
     padding: 3rem 3rem 3rem 7rem;
+  border-bottom: 1px solid grey;
     justify-content: space-between;
 }
 .side-1 h3{
-    font-family: Clash Display;
+  font-family: "Clash Display-Bold", Helvetica;
 font-weight: 700;
 font-size: 30px;
 line-height: 39.36px;
@@ -70,7 +72,7 @@ margin-bottom: .6rem;
     color: #D434FE;
 }
 .privacy-update{
-    font-family: Montserrat;
+      font-family: "Montserrat-Regular", Helvetica;
 font-weight: 400;
 font-size: 14px;
 line-height: 27.5px;
@@ -78,7 +80,7 @@ color: hsl(0, 2%, 75%);
 margin-bottom: 1rem;
 }
 .privacy-text{
-    font-family: Montserrat;
+      font-family: "Montserrat-Regular", Helvetica;
 font-weight: 400;
 font-size: 14px;
 line-height: 27.5px;
@@ -92,7 +94,7 @@ width: 27rem;
     /* width: 30rem; */
 }
 .listening-policy{
-    font-family: Montserrat;
+      font-family: "Montserrat-Regular", Helvetica;
 font-weight: 400;
 font-size: 14px;
 line-height: 27.5px;
@@ -141,6 +143,7 @@ margin-bottom: .4rem;
   font-size: 12px;
 }
 .side-2{
+  position: relative;
     background-image: url('../assets/privacy-logo');
     background-repeat: no-repeat;
     background-color: linear-gradient(#903AFF
@@ -148,7 +151,15 @@ margin-bottom: .4rem;
 #FF26B9
 14%);
 }
-.side-2 img{
+.side-2 .privacy{
     width: 530px;
+    z-index: 999;
+}
+.privacy-logo{
+  position: absolute;
+  width: 480px;
+  height: 550px;
+  z-index: 1;
+  opacity: .5;
 }
 </style>

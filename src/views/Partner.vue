@@ -75,6 +75,7 @@ export default {};
   text-align: center;
   gap: 65px;
   position: relative;
+  border-bottom: 1px solid grey;
 }
 .purple-light1{
     position: absolute;

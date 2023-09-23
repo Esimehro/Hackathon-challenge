@@ -1,9 +1,9 @@
-<template lang="">
-  <div class="container">
+<template >
+  <div class="container" id="section-5">
+    <img src="../assets/Purple5.png" alt="" class="light">
     <div class="block-img">
       <img src="../assets/cwok.png" alt="" />
     </div>
-
     <div>
       <div class="block2">
         <div className="label">
@@ -22,12 +22,15 @@
               <br />
               want to ask about
             </span>
-            <span className="span">getlinked Hackathon 1.0</span>
+            <span className="span1">getlinked Hackathon 1.0</span>
           </p>
         </div>
       </div>
       <div class="blocks">
         <div class="image-block">
+          <img src="../assets/_ (1).png" alt="" class="mark1">
+          <img src="../assets/_ (1).png" alt="" class="mark2">
+          <img src="../assets/_ (1).png" alt="" class="mark3">
           <img src="../assets/help.png" alt="" />
         </div>
         <div class="faq-block">
@@ -98,7 +101,7 @@ export default {
         if (index === i) {
           faq.open = !faq.open;
         } else {
-          faq.open = false; // Close other FAQs
+          faq.open = false;
         }
         return faq;
       });
@@ -108,7 +111,7 @@ export default {
 </script>
 <style scoped>
 .container {
-  padding: 40px 50px 40px 150px;
+  padding: 100px 50px 40px 150px;
   font-family: "Inter", sans-serif;
   max-width: 1440px;
   width: 100%;
@@ -118,83 +121,62 @@ export default {
   font-family: "Montserrat-Regular", Helvetica;
   font-size: 14px;
   font-weight: 400; 
+  border-bottom: 1px solid grey;
   letter-spacing: 0;
   line-height: 27.5px;
   justify-content: space-between;
   height: 100%;
   background: #150E28;
+  position: relative;
 }
 .block-img{
-    /* background: green; */
     height: 630px;
 }
 .block-img img{
     height: 100%;
 }
-.block2{
-    /* background: orange; */
-    width: 100%;
-}
 .label {
   height: 86px;
-  /* width: 253px; */
-  width: 100%;
-  /* background: green; */
-}
 
-.label .frequently-ask {
-  color: transparent;
-  font-family: "Clash Display-Bold", Helvetica;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 32px;
 }
-
-.label .text-wrapper {
-  color: #ffffff;
-}
-
-.label .span {
-  color: #d434fe;
-}
-/* .blocks {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-items: center;
-  padding-top: 5rem;
-} */
 .image-block {
-  /* background-color: aqua; */
-  /* display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-content: center;
-  margin-bottom: 2rem; */
+  position: relative;
+  right: 0;
 }
-.image-block img {
-  /* width: 20rem; */
+.mark1{
+  position: absolute;
+  left: 600px;
+  top: -190px;
+}
+.mark2{
+  position: absolute;
+  left: 740px;
+  top: -230px;
+}
+.mark3{
+  position: absolute;
+  left: 870px;
+  top: -200px;
+}
+.light{
+  position: absolute;
+  right: 0px;
+  width: 400px;
+  top: -320px;
 }
 .faq-block {
-  height: 100%;
   margin-bottom: 3rem;
 }
 .faqs {
   margin-top: 2rem;
-  /* background: orange; */
   width: 100%;
-}
-.faq.open {
-    /* background: pink; */
-    width: 100%;
 }
 .faq .question {
   position: relative;
   border-bottom: 1px solid #D434FE;
   transition: all 0.4s linear;
   padding: 15px 20px 10px 0px;
-  width: 100%;
+  width: 30rem;
 }
 .faq.open .question {
   margin-bottom: 15px;
@@ -220,10 +202,62 @@ export default {
 .faq .answer {
   opacity: 1;
   transition: all 0.4s ease-out;
-  /* background-color: purple; */
-  height: 100%;
-  width: 100%;
-  /* padding: 5px 15px 15px 15px; */
+  width: 30rem;
+  padding: 0px 10px;
   font-size: 16px;
+}
+.frequently-ask {
+  color: transparent;
+  font-family: "Clash Display-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.label .text-wrapper {
+  color: #ffffff;
+}
+.label .span {
+  color: #d434fe;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+  padding: 100px 50px 40px 150px;
+  max-width: 1440px;
+  width: 100%;
+  gap: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.mark1{
+  position: absolute;
+  left: 0px;
+  top: 460px;
+}
+.mark2{
+  position: absolute;
+  left: 135px;
+  top: 420px;
+}
+.mark3{
+  position: absolute;
+  left: 280px;
+  top: 450px;
+}
+.light{
+  position: absolute;
+  display: none;
+  right: 0px;
+  width: 400px;
+  top: -320px;
+}
+.label{
+  text-align: center;
+}
 }
 </style>

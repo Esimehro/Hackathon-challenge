@@ -67,13 +67,6 @@ export default {
 <style scoped>
 .contact-page{
     background-color: rgb(21, 14, 40);
-    /* background: linear-gradient(
-    10deg,
-    rgb(21, 14, 40) 99%,
-    rgb(212, 52, 254) 56.42%,
-    rgb(255, 37.9, 184.51) 99.99%,
-    rgb(254, 52, 185.32) 10%
-  ); */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -93,7 +86,6 @@ font-weight: 600;
 font-size: 32px;
 line-height: 39.36px;
 }
-
 .info, .address{
     font-family: Montserrat;
     font-weight: 400;
@@ -132,7 +124,6 @@ margin-top: 20px;
   box-shadow: -3px 11px 12px -6px rgba(0, 0, 0, 0.69);
   -webkit-box-shadow: -3px 11px 12px -6px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: -3px 11px 12px -6px rgba(0, 0, 0, 0.69);
-  /* box-shadow: 0px 0px 81px -11px rgba(0,0,0,0.1); */
   padding: 4rem;
   border-radius: 12px;
   height: 510px;

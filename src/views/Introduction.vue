@@ -1,5 +1,5 @@
 <template>
-  <div class="big-idea-container">
+  <div class="big-idea-container" id="section-2">
     <div class="big-idea">
       <div class="big-idea-wrapper">
         <div class="bulb-container">

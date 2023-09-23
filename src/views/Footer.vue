@@ -105,6 +105,7 @@ export default {};
   color: #ffffff;
   padding: 54px 135px;
   position: relative;
+  font-family: "Montserrat-Regular", Helvetica;
 }
 .white-star {
   position: absolute;
@@ -169,6 +170,7 @@ export default {};
 .label1 {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .text-wrapper1 {
   color: #d434fe;

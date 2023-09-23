@@ -45,10 +45,10 @@ export default {
   background-color: #150e28;
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
   justify-content: space-around;
   height: 100%;
   padding: 2rem 2rem 5rem 0rem;
+  border-bottom: 1px solid grey;
 }
 .trophy{
     width: 500px;
@@ -60,9 +60,7 @@ export default {
 }
 .awards-text-wrapper {
   display: flex;
-  /* justify-content: flex-end; */
   flex-direction: column;
-  /* background-color: red; */
   align-items: flex-start;
   padding-right: 7rem;
 }
@@ -86,7 +84,6 @@ export default {
   margin-top: 1rem;
 }
 .position-block {
-  /* background-color: #D434FE; */
   border: 1px solid #d434fe;
   display: flex;
   align-items: center;
