@@ -31,7 +31,7 @@
           <img src="../assets/_(1).png" alt="" class="mark1">
           <img src="../assets/_(1).png" alt="" class="mark2">
           <img src="../assets/_(1).png" alt="" class="mark3">
-          <img src="../assets/help.png" alt="" />
+          <!-- <img src="../assets/help.png" alt="" /> -->
         </div>
         <div class="faq-block">
           <div class="faqs">
