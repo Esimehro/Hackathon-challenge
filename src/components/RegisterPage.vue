@@ -1,193 +1,195 @@
 <template>
   <div class="container">
     <Navbar />
-  <div class="register-page">
-    <div class="vector-container">
-      <img src="../assets/sata-gra.png" alt="purple star" />
-      <img
-        class="vector"
-        src="../assets/3d-graphic-designer-showing-thumbs-up.png"
-        alt="Thumbs up graphic"
-      />
-      <img src="../assets/star.png" alt="white star" />
-      <img src="../assets/sata-gra.png" alt="purple star" />
-    </div>
-
-    <div class="overlay-wrapper">
-      <img src="../assets/star.png" alt="white star" />
-
-      <h2 class="text-wrapper-1">Register</h2>
-
-      <div class="movement">
-        <p class="text-wrapper-2">
-          Be part of this movement! <img src="../assets/line.png" alt="line" />
-        </p>
+    <div class="register-page">
+      <div class="vector-container">
+        <img src="../assets/sata-gra.png" alt="purple star" />
         <img
-          class="vector-girl"
-          src="../assets/girl.png"
-          alt="boy vector image"
+          class="vector"
+          src="../assets/3d-graphic-designer-showing-thumbs-up.png"
+          alt="Thumbs up graphic"
         />
-        <img
-          class="vector-boy"
-          src="../assets/boy.png"
-          alt="boy vector image"
-        />
+        <img src="../assets/star.png" alt="white star" />
+        <img src="../assets/sata-gra.png" alt="purple star" />
       </div>
 
-      <h2 class="form-header">CREATE YOUR ACCOUNT</h2>
+      <div class="overlay-wrapper">
+        <img src="../assets/star.png" alt="white star" />
 
-      <form action="" @submit.prevent="proceed" class="form" novalidate>
-        <div class="form-body">
-          <div class="form-block">
-            <label for="">Team's Name</label>
-            <input
-              type="text"
-              placeholder="Enter the name of your group"
-              v-model="userData.teamsName"
-            />
+        <h2 class="text-wrapper-1">Register</h2>
 
-            <div
-              v-if="submitted && userData.teamsName.length < 3"
-              class="error-message"
-            >
-              Team's name must be at least 3 characters.
-            </div>
-          </div>
-
-          <div class="form-block">
-            <label for="">Phone</label>
-            <input
-              type="tel"
-              placeholder="Enter your phone number"
-              v-model="userData.phoneNumber"
-            />
-
-            <div
-              v-if="submitted && !isValidPhoneNumber(userData.phoneNumber)"
-              class="error-message"
-            >
-              Phone number is required.
-            </div>
-          </div>
-        </div>
-
-        <div class="form-body">
-          <div class="form-block">
-            <label for="">Email</label>
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              v-model="userData.email"
-            />
-
-            <div
-              v-if="submitted && !isValidEmail(userData.email)"
-              class="error-message"
-            >
-              Invalid email address.
-            </div>
-          </div>
-
-          <div class="form-block">
-            <label for="">Project Topic</label>
-            <input
-              type="text"
-              placeholder="What is your group project topic"
-              v-model="userData.projectTopic"
-            />
-
-            <div
-              v-if="submitted && userData.projectTopic.length < 3"
-              class="error-message"
-            >
-              Project topic must be at least 3 characters.
-            </div>
-          </div>
-        </div>
-
-        <div class="form-body">
-          <div class="form-dropdown">
-            <label for="">Category</label>
-            <select name="category" id="category" v-model="userData.category">
-              <option value="volvo">Select your category</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
-            </select>
-
-            <div v-if="submitted && !userData.category" class="error-message">
-      Please select a category.
-    </div>
-          </div>
-
-          <div class="form-dropdown">
-            <label for="">Group Size</label>
-            <select
-              name="groupSize"
-              id="groupSize"
-              v-model="userData.groupSize"
-            >
-              <option value="select">Select</option>
-              <option value="food">food</option>
-              <option value="travel">travel</option>
-              <option value="sleep">sleep</option>
-            </select>
-
-            <div v-if="submitted && userData.groupSize === 'select'" class="error-message">
-      Please select a group size.
-    </div>
-          </div>
-        </div>
-        <p class="note">
-          Please review your registration details before submitting
-        </p>
-        <div class="terms">
-          <input
-            type="checkbox"
-            class="check"
-            id="agreement"
-            v-model="userData.agreement"
-            required
+        <div class="movement">
+          <p class="text-wrapper-2">
+            Be part of this movement!
+            <img src="../assets/line.png" alt="line" />
+          </p>
+          <img
+            class="vector-girl"
+            src="../assets/girl.png"
+            alt="boy vector image"
           />
-          <label for="agreement" class="agreement"
-            >I agree with the event terms and conditions and privacy
-            policy</label
-          >
-
-          <div v-if="submitted && !userData.agreement" class="error-message">
-      Please agree to the terms and conditions.
-    </div>
+          <img
+            class="vector-boy"
+            src="../assets/boy.png"
+            alt="boy vector image"
+          />
         </div>
 
-        <div class="form-btn">
-          <button type="submit">Register now</button>
-        </div>
-      </form>
+        <h2 class="form-header">CREATE YOUR ACCOUNT</h2>
+
+        <form action="" @submit.prevent="proceed" class="form" novalidate>
+          <div class="form-body">
+            <div class="form-block">
+              <label for="">Team's Name</label>
+              <input
+                type="text"
+                placeholder="Enter the name of your group"
+                v-model="userData.teamsName"
+              />
+
+              <div
+                v-if="submitted && userData.teamsName.length < 3"
+                class="error-message"
+              >
+                Team's name must be at least 3 characters.
+              </div>
+            </div>
+
+            <div class="form-block">
+              <label for="">Phone</label>
+              <input
+                type="tel"
+                placeholder="Enter your phone number"
+                v-model="userData.phoneNumber"
+              />
+
+              <div
+                v-if="submitted && !isValidPhoneNumber(userData.phoneNumber)"
+                class="error-message"
+              >
+                Phone number is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-body">
+            <div class="form-block">
+              <label for="">Email</label>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                v-model="userData.email"
+              />
+
+              <div
+                v-if="submitted && !isValidEmail(userData.email)"
+                class="error-message"
+              >
+                Invalid email address.
+              </div>
+            </div>
+
+            <div class="form-block">
+              <label for="">Project Topic</label>
+              <input
+                type="text"
+                placeholder="What is your group project topic"
+                v-model="userData.projectTopic"
+              />
+
+              <div
+                v-if="submitted && userData.projectTopic.length < 3"
+                class="error-message"
+              >
+                Project topic must be at least 3 characters.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-body">
+            <div class="form-dropdown">
+              <label for="">Category</label>
+              <select name="category" id="category" v-model="userData.category">
+                <option value="mobile">Select your category</option>
+                <option v-for="category in categories" :value="category.id">{{ category.name }}</option>
+    </select>
+
+              <div v-if="submitted && !userData.category" class="error-message">
+                Please select a category.
+              </div>
+            </div>
+
+            <div class="form-dropdown">
+              <label for="">Group Size</label>
+              <select
+                name="groupSize"
+                id="groupSize"
+                v-model="userData.groupSize"
+              >
+                <option value="1">Select</option>
+                <option v-for="size in groupSizes" :value="size.id">{{ size.size }}</option>
+              </select>
+
+              <div
+                v-if="submitted && userData.groupSize === 'select'"
+                class="error-message"
+              >
+                Please select a group size.
+              </div>
+            </div>
+          </div>
+          <p class="note">
+            Please review your registration details before submitting
+          </p>
+          <div class="terms">
+            <input
+              type="checkbox"
+              class="check"
+              id="agreement"
+              v-model="userData.agreement"
+              required
+            />
+            <label for="agreement" class="agreement"
+              >I agree with the event terms and conditions and privacy
+              policy</label
+            >
+
+            <div v-if="submitted && !userData.agreement" class="error-message">
+              Please agree to the terms and conditions.
+            </div>
+          </div>
+
+          <div class="form-btn">
+            <button type="submit">Register now</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
   </div>
 </template>
 <script>
-import Navbar from "../components/Navbar.vue"
-import { ref } from "vue";
+import Navbar from "../components/Navbar.vue";
+import { ref,  onMounted} from "vue";
 import axios from "axios";
 export default {
   name: "RegisterPage",
-components:{
-  Navbar
-},
+  components: {
+    Navbar,
+  },
   setup() {
     const userData = ref({
       teamsName: "",
       phoneNumber: "",
       email: "",
       projectTopic: "",
-      category: "volvo",
-      groupSize: "select",
+      category: "mobile",
+      groupSize: "1",
       agreement: false,
     });
 
     const submitted = ref(false);
+    const categories = ref([]);
+    const groupSizes = ref([]);
 
     const isValidEmail = (email) => {
       const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
@@ -260,6 +262,57 @@ components:{
       }
     };
 
+    onMounted(async () => {
+      try {
+        const response = await axios.get("https://backend.getlinked.ai/hackathon/categories-list");
+        categories.value = response.data.categories;
+        groupSizes.value = [
+    {
+      'id': 1,
+      'size': 1
+    },
+    {
+      'id': 2,
+      'size': 2
+    },
+    {
+      'id': 3,
+      'size': 3
+    },
+    {
+      'id': 4,
+      'size': 4
+    },
+    {
+      'id': 5,
+      'size': 5
+    },
+    {
+      'id': 6,
+      'size': 6
+    },
+    {
+      'id': 7,
+      'size': 7
+    },
+    {
+      'id': 8,
+      'size': 8
+    },
+    {
+      'id': 9,
+      'size': 9
+    },
+    {
+      'id': 10,
+      'size': 10
+    },
+        ];
+      } catch (error) {
+        console.error("API request error:", error);
+      }
+    });
+
     return {
       userData,
       submitted,
@@ -268,6 +321,8 @@ components:{
       isValidPhoneNumber,
       isValidSelectCategory,
       isValidSelect,
+      categories,
+      groupSizes,
     };
   },
 };
@@ -318,7 +373,7 @@ components:{
 .text-wrapper-2 {
   position: absolute;
   color: #fff;
-    font-family: "Montserrat-Regular", Helvetica;
+  font-family: "Montserrat-Regular", Helvetica;
   font-size: 14px;
   font-weight: 400;
 }
@@ -330,7 +385,7 @@ components:{
 }
 .form-header {
   color: #fff;
-    font-family: "Montserrat-Regular", Helvetica;
+  font-family: "Montserrat-Regular", Helvetica;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 15px;
@@ -432,7 +487,7 @@ components:{
   font-size: 16px;
   cursor: pointer;
 }
-.form-btn button:hover{
+.form-btn button:hover {
   background: transparent;
   transition: all 0.5s ease-in-out;
 }
