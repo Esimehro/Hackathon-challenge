@@ -147,18 +147,11 @@ export default {};
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-family: "Montserrat-SemiBold", Helvetica;
   font-size: 14px;
-  font-style: normal;
-  position: relative;
 }
 .label .getlinked {
-  color: transparent;
-  font-family: "Clash Display-Bold", Helvetica;
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 0;
-  line-height: normal;
 }
 .label .text-wrapper {
   color: #ffffff;
@@ -169,7 +162,6 @@ export default {};
 .terms-block {
   display: flex;
   gap: 1rem;
-  font-family: "Montserrat-SemiBold", Helvetica;
   font-size: 14px;
   font-style: normal;
   letter-spacing: 0.5px;
@@ -180,18 +172,12 @@ export default {};
 }
 .text-wrapper1 {
   color: #d434fe;
-  font-family: "Montserrat-SemiBold", Helvetica;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 172.4%;
 }
 .links-block {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  color: #ffffff;
-  font-family: "Montserrat-Regular", Helvetica;
   font-size: 12px;
   font-weight: 500;
   line-height: 20.7px;
@@ -212,11 +198,6 @@ export default {};
   gap: 22px;
   margin-top: 10px;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Montserrat-Regular", Helvetica;
-  letter-spacing: 0.5px;
-  line-height: 14px;
 }
 .contact {
   display: flex;
@@ -230,11 +211,62 @@ export default {};
   height: 18px;
 }
 .rights {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Montserrat-Regular", Helvetica;
   letter-spacing: 0.5px;
   position: relative;
   height: 100%;
+}
+
+@media screen and (max-width:1091px) {
+  .get-text {
+  width: 70%;
+}
+.container {
+  max-width: 1091px;
+  align-items: center;
+  gap: 59px;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  padding: 54px 85px;
+}
+}
+@media screen and (max-width:965px) {
+  .block-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+.get-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+}
+@media screen and (max-width:693px) {
+  .label .getlinked {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+  .get-text {
+  width: 100%;
+}
+}
+@media screen and (max-width:480px) {
+  .container {
+  max-width: 1091px;
+  align-items: center;
+  gap: 59px;
+  padding: 54px 45px;
+}
+.white-star2 {
+  width: 15px;
+  height: 18px;
+  top: 230px;
+  right: 90px;
+}
 }
 </style>

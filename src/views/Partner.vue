@@ -81,7 +81,6 @@ export default {};
     height: 50%;
     left: 0;
     top: 80px;
-    
 }
 .purple-light2{
     position: absolute;
@@ -91,22 +90,16 @@ export default {};
     background-blend-mode: hard-light;
     opacity: .6;
     height: 300px;
-    /* mix-blend-mode: multiply;  */
-    /* mix-blend-mode: screen; */
-;
 }
 .purple-star2{
     position: absolute;
     top: -40px;
     left: 200px;
-
 }
 .purple-star3{
     position: absolute;
     top: 250px;
     left: 200px;
-
-
 }
 .purple-star1{
     position: absolute;
@@ -140,28 +133,23 @@ export default {};
   border: 1px solid #d434fe;
   background: rgba(255, 255, 255, 0.01);
   display: flex;
-  /* flex-direction: column; */
   gap:150px;
   align-items: center;
 }
 .block-img {
-  /* background: green; */
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   justify-content: space-between;
   position: relative;
-  /* gap: 100px; */
-  /* width: 110%; */
   height: 100%;
-  /* gap: 100px; */
 }
 .line-1{
     position: absolute;
     top: 135px;
     width: 257.298px;
-height: 4px;
+    height: 4px;
 }
 .line-1-1{
     position: absolute;
@@ -194,5 +182,26 @@ height: 4px;
     width: 257px;
 height: 4px;
 left: -25px;
+}
+
+@media screen and (max-width: 1200px){
+  .block2 {
+  padding: 94px 99px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #d434fe;
+  background: rgba(255, 255, 255, 0.01);
+  display: flex;
+  gap:150px;
+  align-items: center;
+}
+.line-3{
+    position: absolute;
+    top: 128px;
+    width: 100%;
+height: 4px;
+left: -25px;
+}
+  
 }
 </style>

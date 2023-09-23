@@ -100,6 +100,7 @@ export default {};
   color: #ffffff;
   padding: 54px 30px;
   position: relative;
+  border-bottom: 1px solid grey;
 }
 .image {
   height: 587px;

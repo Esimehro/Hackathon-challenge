@@ -1,4 +1,6 @@
 <template>
+  <div>
+<Navbar />
   <div class="contact-page">
     <div class="get-in-touch">
       <h3>Get in touch</h3>
@@ -73,72 +75,15 @@
       </form>
     </div>
   </div>
+  </div>
 </template>
 <script>
-import { ref } from "vue";
-import axios from "axios";
+import Navbar from './Navbar.vue';
 export default {
   name: "ContactPage",
-
-  setup() {
-    const contactData = ref({
-      firstName: "",
-      email: "",
-      message: "",
-    });
-
-    const submitted = ref(false);
-
-    const isValidEmail = (email) => {
-      const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
-      return emailRegex.test(email);
-    };
-
-
-    const proceed = async () => {
-      const isValidName = contactData.value.firstName.length >= 3;
-      const isValidMessage = contactData.value.message.length >= 3;
-      const isValidEmailValue = isValidEmail(contactData.value.email);
-      
-
-      if (
-        !isValidName ||
-        !isValidEmailValue ||
-        !isValidMessage 
-      ) {
-        submitted.value = true;
-      } else {
-        try {
-          const response = await axios.post("https://backend.getlinked.ai/hackathon/contact-form'",
-            {
-              firstName: contactData.value.firstName,
-              email: contactData.value.email,
-              message: contactData.value.message,
-            }
-          );
-
-          contactData.value.firstName = "";
-          contactData.value.email = "";
-          contactData.value.message = "";
-
-          submitted.value = false;
-        } catch (error) {
-          console.log("API request error:", error);
-          if (error.response) {
-            console.log("Response data:", error.response.data);
-          }
-        }
-      }
-    };
-
-    return {
-      contactData,
-      submitted,
-      proceed,
-      isValidEmail,
-      
-    };
-  },
+  components:{
+    Navbar
+  }
 };
 </script>
 

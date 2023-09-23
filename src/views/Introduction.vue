@@ -192,7 +192,7 @@ export default {};
     align-items: center;
     gap: 20px;
     height: 100%;
-    padding: 0px 60px;
+    padding: 0px 60px 100px 60px;
   }
   .big-bulb {
     width: 100%;

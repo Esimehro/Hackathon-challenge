@@ -27,7 +27,7 @@
             <li><a href="#section-6" class="active-link">Timeline</a></li>
             <li><a href="#">Overview</a></li>
             <li><a href="#">FAQs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><router-link to="/contact" class="active-link">Contact</router-link></li>
           </ul>
           <div class="register-btn2">
             <button>Register</button>
@@ -37,18 +37,22 @@
     </div>
     <div class="navigation">
       <div class="logo">
+        <router-link to="/">
         <img src="../assets/logo.png" alt="Brand logo" />
+      </router-link>
       </div>
       <div class="nav-right">
         <ul class="nav-links">
-          <li>Timeline</li>
-          <li>Overview</li>
-          <li>FAQs</li>
-          <li>Contact</li>
+          <li><a href="#section-6" class="active-link">Timeline</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">FAQs</a></li>
+          <li><router-link to="/contact" class="active-link">Contact</router-link></li>
         </ul>
 
-        <div class="register-btn">
+        <div class="register-btn" >
+          <router-link to="/register">
           <button>Register</button>
+        </router-link>
         </div>
       </div>
     </div>
