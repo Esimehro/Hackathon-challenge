@@ -1,4 +1,6 @@
 <template>
+  <div>
+<Navbar />
   <div class="contact-page">
     <div class="get-in-touch">
       <h3>Get in touch</h3>
@@ -50,10 +52,15 @@
       </form>
     </div>
   </div>
+  </div>
 </template>
 <script>
+import Navbar from './Navbar.vue';
 export default {
   name: "ContactPage",
+  components:{
+    Navbar
+  }
 };
 </script>
 

@@ -155,8 +155,13 @@ export default {
   font-size: 16px;
   font-weight: 400;
   left: 0;
+  border: 2px solid #9a39ff;
   letter-spacing: 0;
   line-height: normal;
+}
+.button-block button:hover {
+    background: transparent;
+  transition: all 0.5s ease-in-out;
 }
 .timer-block{
     display: flex;

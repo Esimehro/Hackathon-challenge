@@ -1,4 +1,6 @@
 <template>
+  <div>
+    <Navbar />
   <div class="register-page">
     <div class="vector-container">
       <img src="../assets/sata-gra.png" alt="purple star" />
@@ -163,13 +165,17 @@
       </form>
     </div>
   </div>
+  </div>
 </template>
 <script>
+import Navbar from "../components/Navbar.vue"
 import { ref } from "vue";
 import axios from "axios";
 export default {
   name: "RegisterPage",
-
+components:{
+  Navbar
+},
   setup() {
     const userData = ref({
       teamsName: "",
@@ -273,6 +279,7 @@ export default {
   display: flex;
   flex-direction: row;
   height: 100%;
+  font-family: "Montserrat-Regular", Helvetica;
   padding: 2rem 2rem 2rem 0rem;
   /* justify-content: center; */
 }
@@ -281,13 +288,6 @@ export default {
   width: 600px;
 }
 .overlay-wrapper {
-  /* background: linear-gradient(
-    180deg,
-    rgb(144, 58, 255) 0%,
-    rgb(212, 52, 254) 56.42%,
-    rgb(255, 37.9, 184.51) 99.99%,
-    rgb(254, 52, 185.32) 100%
-  ); */
   background-color: #1e182e;
   box-shadow: -3px 11px 12px -6px rgba(0, 0, 0, 0.69);
   -webkit-box-shadow: -3px 11px 12px -6px rgba(0, 0, 0, 0.69);
@@ -301,7 +301,7 @@ export default {
 }
 .text-wrapper-1 {
   color: #d434fe;
-  font-family: Clash Display;
+  font-family: "Clash Display-Bold", Helvetica;
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -315,7 +315,7 @@ export default {
 .text-wrapper-2 {
   position: absolute;
   color: #fff;
-  font-family: Montserrat;
+    font-family: "Montserrat-Regular", Helvetica;
   font-size: 14px;
   font-weight: 400;
 }
@@ -327,7 +327,7 @@ export default {
 }
 .form-header {
   color: #fff;
-  font-family: Montserrat;
+    font-family: "Montserrat-Regular", Helvetica;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 15px;
@@ -415,14 +415,7 @@ export default {
   border: none;
   outline: none;
   border-radius: 4px;
-  border: 1px solid
-    linear-gradient(
-      270deg,
-      #903aff 0%,
-      #d434fe 56.42%,
-      #ff26b9 99.99%,
-      #fe34b9 100%
-    );
+  border: 2px solid #9a39ff;
   background: linear-gradient(
     270deg,
     #903aff 0%,
@@ -432,6 +425,12 @@ export default {
   );
   color: #fff;
   font-weight: 400;
+  transition: all 0.5s ease-in-out;
   font-size: 16px;
+  cursor: pointer;
+}
+.form-btn button:hover{
+  background: transparent;
+  transition: all 0.5s ease-in-out;
 }
 </style>
