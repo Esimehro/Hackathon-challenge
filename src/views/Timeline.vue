@@ -10,12 +10,12 @@
           </p>
         </div>
         <div class="movement">
-          <img className="line-15" alt="Line" src="../assets/Line 3.png" />
-          <img className="line-16" alt="Line" src="../assets/Line 4.png" />
-          <img className="line-17" alt="Line" src="../assets/Line 4.png" />
-          <img className="line-18" alt="Line" src="../assets/Line 4.png" />
-          <img className="line-19" alt="Line" src="../assets/Line 4.png" />
-          <img className="line-20" alt="Line" src="../assets/Line 4.png" />
+          <img className="line-15" alt="Line" src="../assets/Line-3.png" />
+          <img className="line-16" alt="Line" src="../assets/Line-4.png" />
+          <img className="line-17" alt="Line" src="../assets/Line-4.png" />
+          <img className="line-18" alt="Line" src="../assets/Line-4.png" />
+          <img className="line-19" alt="Line" src="../assets/Line-4.png" />
+          <img className="line-20" alt="Line" src="../assets/Line-4.png" />
           <div className="text-wrapper-49">Hackathon Announcement</div>
           <div className="text-wrapper-50">Teams Registration ends</div>
           <p className="text-wrapper-51">
@@ -94,7 +94,7 @@
               <div className="text-wrapper-61">6</div>
             </div>
           </div>
-          <img className="star-24" alt="Star" src="../assets/star (1).png" />
+          <img className="star-24" alt="Star" src="../assets/star-(1).png" />
           <img className="star-25" alt="Star" src="../assets/star.png" />
           <img className="star-pu-7" alt="Star pu" src="../assets/starpu.png" />
         </div>

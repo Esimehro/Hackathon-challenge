@@ -19,7 +19,7 @@
         <div class="terms-block">
           <p>Terms of Use</p>
           <img
-            src="../assets/Line 20.png"
+            src="../assets/Line-20.png"
             alt=""
             style="width: 2px; height: 17px"
           />
