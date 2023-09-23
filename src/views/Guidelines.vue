@@ -2,10 +2,18 @@
   <div class="container">
     <div class="block1">
       <img src="../assets/Purple3.png" alt="" class="img3" />
-      <img src="../assets/satagra.png" alt="" class="img4" style="width: 20px;
-height: 22px;"/>
-      <img src="../assets/star.png" alt="" class="img5" style="width: 20px;
-height: 22px;"/>
+      <img
+        src="../assets/satagra.png"
+        alt=""
+        class="img4"
+        style="width: 20px; height: 22px"
+      />
+      <img
+        src="../assets/star.png"
+        alt=""
+        class="img5"
+        style="width: 20px; height: 22px"
+      />
       <div>
         <p className="rules-and-guidelines">
           <span className="text-wrapper">
@@ -18,15 +26,11 @@ height: 22px;"/>
       <div>
         <p className="our-tech-hackathon">
           Our tech hackathon is a melting pot of visionaries, and its purpose is
-          as
-          clear as day: to shape the future. Whether you're a coding genius, a
-          design maverick, or a concept wizard, you'll have the chance to
-          transform 
-          your ideas into reality. Solving real-world problems, pushing the
-          boundaries 
-          of technology, and creating solutions that can change the world,
-          
-          that's what we're all about!
+          as clear as day: to shape the future. Whether you're a coding genius,
+          a design maverick, or a concept wizard, you'll have the chance to
+          transform your ideas into reality. Solving real-world problems,
+          pushing the boundaries of technology, and creating solutions that can
+          change the world, that's what we're all about!
         </p>
       </div>
     </div>
@@ -102,17 +106,16 @@ export default {};
   line-height: 27.5px;
   margin-top: 18px;
   z-index: 999;
-  background: green;
+  /* background: green; */
   width: 40%;
 }
-.block2{
-    position: absolute;
-    background: green;
-    right: 200px;
-    height: 100%;
+.block2 {
+  position: absolute;
+  /* background: green; */
+  right: 200px;
+  height: 100%;
 }
-.block2 img{
-    height: 100%;
-
+.block2 img {
+  height: 100%;
 }
 </style>

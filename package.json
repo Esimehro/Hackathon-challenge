@@ -9,20 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "axios": "^1.5.0",
-    "vue": "^3.3.4"
-=======
-    "vue": "^3.3.4",
-    "vuex": "^4.0.2"
->>>>>>> 7122e17502b846fdda37d819122d88517cac9618
-=======
     "axios": "^1.5.0",
     "vue": "^3.3.4",
+    "vuex": "^4.0.2",
     "vue-router": "^4.2.5"
->>>>>>> 1186ecf0112f98e675278b0ef0966a9b544ecd20
-  },
+},
+
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
     "vite": "^4.4.5"

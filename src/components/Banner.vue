@@ -37,8 +37,8 @@ export default {
     color: #FFFFFF;
     font-weight: 700;
 }
-.banner-header{
-    /* font-family: Montserrat;
-    font-style: italic; */
-}
+/* .banner-header{
+    font-family: Montserrat;
+    font-style: italic;
+} */
 </style>
